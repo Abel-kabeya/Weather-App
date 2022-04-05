@@ -12,7 +12,7 @@ body{
     background-size: cover;
     overflow: hidden;
     height: 100vh;
-    font-family: 'Poppins' sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .container{
@@ -32,7 +32,6 @@ body{
 
 .date-container .time{
     font-size: 70px;
-    font-weight: 100;
 }
 
 .date-container #am-pm{
@@ -83,17 +82,24 @@ body{
     width: 100%;
     align-items: center;
     justify-content: center;
+    overflow-y: hidden;
 }
 
 .future-forecast .today{
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid #eee;	
+    border-radius: 10px;	
+    padding:15px;	
+    padding-right: 40px;	
+    border-radius: 10px;	
+    background: rgba(0,0,0,0.2)
 }
 
 .future-forecast .today .day{
     padding: 5px 15px;
-    background: #3c3c44;
+    background: #3C3C44;
     border-radius: 50px;
     text-align: center;
 }
@@ -114,19 +120,22 @@ body{
     justify-content: center;
     margin: 0 10px;
     border: 1px solid #eee;
+    padding: 15px;
     border-radius: 10px;
     padding: 15px;
+    
 }
 
 .weather-forecast .weather-forecast-item .day{
     padding: 5px 15px;
-    background: #3c3c44;
+    background: #3C3C44;
     border-radius: 50px;
     text-align: center;
 }
 
 .weather-forecast .weather-forecast-item .temp{
     font-weight: 100;
+    font-size: 12px;
 }
 
 @media only screen and (max-width:730px){
@@ -170,7 +179,7 @@ body{
         padding: 12px;
     }
 
-    .current-info .others .weather-item{
+    .current-info .others .weather-items{
         font-size: 14px;
     }
 
